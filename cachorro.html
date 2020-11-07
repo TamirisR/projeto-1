@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/faftcon.png" type="image/x-icon">
+        <script src="jquery.js"></script>
+        <script src="bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style2.css">
+
+        <title>Casa de Rações Manacá</title>
+
+    </head>
+
+    <body Onload="ChangeImg()">
+
+        <header>
+            <div>
+                <a href="index.html">
+                    <img src="imagens/logo6.png" alt="logo casa de rações manacá">
+                </a>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-md  " id="menu">
+            <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <img src="imagens/menu1.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gato.html">Gato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cachorro.html">Cachorro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="passarinho.html">Passarinho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quemSomos.html">Quem Somos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+
+            <section id="produtos">
+                <nav>
+                    <h3 id="categorias">Cachorro</h3>
+                    <div class="underline "></div>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek12" checked onclick="aparecer12()"> Todos
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek13" onclick="aparecer13()"> Rações
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek14" onclick="aparecer14()"> Petisco
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek15" onclick="aparecer15()"> Sachês
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek16" onclick="aparecer16()"> Comedouro e Bebedouro
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek17" onclick="aparecer17()"> Brinquedos
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek18" onclick="aparecer18()"> Higiene
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek19" onclick="aparecer19()"> Coleiras e Guias
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek20" onclick="aparecer20()"> Cama e casinhas
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek21" onclick="aparecer21()"> Caixa de transporte
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek22" onclick="aparecer22()"> Roupas
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek23" onclick="aparecer23()"> Outros
+                    </label>
+                </nav>
+
+                <article>
+                    <div id="68" style="display:none;">
+                        <h3>Trabalhamos com rações a granel das melhores marcas</h3>
+                        <img src="imagens/ração3.png" alt="Conteiner de rações a granel" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Rações para cachorros filhotes, adultos e castrados</span>
+                    </div>
+                    <div id="69">
+                        <img src="imagens/golden.jpg" alt="Logo da marca Golden" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Golden</span>
+                        <span class="h5 mt-4 d-block">1 Kilo</span>
+                        <span class="h5 mt-4 d-block">R$13,00</span>
+                    </div>
+                    <div id="70">
+                        <img src="imagens/purina.png" alt="Logo da marca Purina" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Purina</span>
+                        <span class="h5 mt-4 d-block">1 Kilo</span>
+                        <span class="h5 mt-4 d-block">R$11,00</span>
+                    </div>
+                    <div id="71">
+                        <img src="imagens/max.jpg" alt="Logo da marca Max" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Max</span>
+                        <span class="h5 mt-4 d-block">1 Kilo</span>
+                        <span class="h5 mt-4 d-block">R$12,50</span>
+                    </div>
+                    <div id="72">
+                        <img src="imagens/pedigree.png" alt="Logo da marca pedigree" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Pedigree</span>
+                        <span class="h5 mt-4 d-block">1 Kilo</span>
+                        <span class="h5 mt-4 d-block">R$13,00</span>
+                    </div>
+                    <div id="73">
+                        <img src="imagens/gran.jpg" alt="Logo da marca GranPlus" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Gran Plus</span>
+                        <span class="h5 mt-4 d-block">1 Kilo</span>
+                        <span class="h5 mt-4 d-block">R$15,00</span>
+                    </div>
+                    <div id="74">
+                        <img src="imagens/petisco_cachorro.png" alt="Biscoito Pedigree Biscrok"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Biscoito Pedigree Biscrok</span>
+                        <span class="h5 mt-4 d-block">500g</span>
+                        <span class="h5 mt-4 d-block">R$16,99</span>
+                    </div>
+                    <div id="75">
+                        <img src="imagens/petisco_cachorro2.jpg" alt="Ossinho Nó"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Ossinho Nó</span>
+                        <span class="h5 mt-4 d-block">8-9 LL Pet</span>
+                        <span class="h5 mt-4 d-block">R$13,50</span>
+                    </div>
+                    <div id="76">
+                        <img src="imagens/petisco_cachorro3.jpg" alt="Petisco Sticks"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Petisco Sticks</span>
+                        <span class="h5 mt-4 d-block">450g</span>
+                        <span class="h5 mt-4 d-block">R$34,50</span>
+                        
+                    </div>
+                    <div id="77">
+                        <img src="imagens/sache_cachorro.jpg" alt="Embalagem de ração úmida Pedigree sachê sabor frango ao molho para adultos"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Sachê Pedigree sabor Frango ao Molho para adultos </span>
+                        <span class="h5 mt-4 d-block">100g</span>
+                        <span class="h5 mt-4 d-block">R$2,29</span>
+                    </div>
+                    <div id="78">
+                        <img src="imagens/sache_cachorro2.jpg" alt="Embalagem de ração úmida Pedigree sachê sabor carne ao molho para adultos "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Sachê Pedigree sabor Carne ao molho para adultos</span>
+                        <span class="h5 mt-4 d-block">100g</span>
+                        <span class="h5 mt-4 d-block">R$2,29</span>
+                    </div>
+                    <div id="79">
+                        <img src="imagens/sache_cachorro3.jpg" alt="Embalagem de ração úmida Pedigree sachê sabor cordeiro ao molho para adultos "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Sachê Pedigree sabor Cordeiro ao Molho para adultos</span>
+                        <span class="h5 mt-4 d-block">100g</span>
+                        <span class="h5 mt-4 d-block">R$2,29</span>
+                    </div>
+                    <div id="80">
+                        <img src="imagens/sache_cachorro4.jpg"  alt="Embalagem de ração úmida Pedigree sachê sabor frango ao molho para filhotes" class="img-fluid">
+                        <span class="h5 mt-4 d-block"> Sachê Pedigree sabor Frango ao Molho para filhotes</span>
+                        <span class="h5 mt-4 d-block">100g</span>
+                        <span class="h5 mt-4 d-block">R$2,29</span>
+                    </div>
+                    <div id="81">
+                        <img src="imagens/sache_cachorro5.png" alt="Embalagem de ração úmida Pedigree sachê sabor carne ao molho para filhotes "  class="img-fluid">
+                        <span class="h5 mt-4 d-block"> Sachê Pedigree sabor Carne ao Molho para filhotes </span>
+                        <span class="h5 mt-4 d-block">100g</span>
+                        <span class="h5 mt-4 d-block">R$2,29</span>
+                    </div>
+                    <div id="82">
+                        <img src="imagens/pote2.jpg" alt="Comedouro duplo de plástico na cor roxa"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro Duplo </span>
+                        <span class="h5 mt-4 d-block">Tam. G</span>
+                        <span class="h5 mt-4 d-block">R$10,00</span>
+                    </div>
+                    <div id="83">
+                        <img src="imagens/pote6.jpg" alt="Comedouro duplo de plástico na cor azul"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro Duplo</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$7,50</span>
+                    </div>
+                    <div id="84">
+                        <img src="imagens/pote7.jpg" alt="Comedouro duplo de plástico na cor vermelha "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro Duplo</span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$5,00</span>
+                    </div>
+                    <div id="85">
+                        <img src="imagens/pote3.jpg"  alt="Comedouro e Bebedouro de plástico na cor na cor azul" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro e Bebedouro</span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$5,00</span>
+                    </div>
+                    <div id="86">
+                        <img src="imagens/pote4.jpg" alt="Comedouro e Bebedouro de plástico na cor vermelha"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro e Bebedouro</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$7,50</span>
+                    </div>
+                    <div id="87">
+                        <img src="imagens/pote5.jpg" alt="Comedouro e Bebedouro de plástico na cor rosa"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro e Bebedouro</span>
+                        <span class="h5 mt-4 d-block">Tam. G</span>
+                        <span class="h5 mt-4 d-block">R$10,00</span>
+                    </div>
+                    <div id="88">
+                        <img src="imagens/pote8.jpg" alt="Comedouro e Bebedouro de alumínio"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro e Bebedouro</span>
+                        <span class="h5 mt-4 d-block">Tam. G</span>
+                        <span class="h5 mt-4 d-block">R$19,00</span>
+                    </div>
+                    <div id="89">
+                        <img src="imagens/pote9.jpg" alt="Bebedouro Automático de plástico na cor cinza"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Bebedouro Automático</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$25,00</span>
+                        
+                    </div>
+                    <div id="90">
+                        <img src="imagens/pote10.png" alt="Bebedouro Automático de plático na cor preta"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Bebedouro Automático</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$25,00</span>
+                    </div>
+                    <div id="91">
+                        <img src="imagens/brinquedo_cachorro8.png" alt="Brinquedo ouriço na cor rosa"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Brinquedo Ouriço</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$8,00</span>
+                    </div>
+                    <div id="92">
+                        <img src="imagens/brinquedo_cachorro3.png" alt=" Bolinha na cor roxa "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Bolinha</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$5,00</span>
+                    </div>                    
+                    <div id="93">
+                        <img src="imagens/brinquedo_cachorro4.png"  alt="Bolinha na cor azul" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Bolinha</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$5,00</span>
+                    </div>
+                    <div id="94">
+                        <img src="imagens/brinquedo_cachorro5.jpg" alt="Bolinha na cor amarela"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Bolinha</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$5,00</span>
+                    </div>
+                    <div id="95">
+                        <img src="imagens/brinquedo_cachorro6.jpg" alt="Brinquedo Para Cães Halter na cor verde "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Brinquedo Para Cães Halter</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$7,00</span>
+                    </div>
+                    <div id="96">
+                        <img src="imagens/brinquedo_cachorro7.jpg" alt="Brinquedo em forma de osso na cor rosa "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Brinquedo Osso </span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$7,00</span>
+                    </div>
+                    <div id="97">
+                        <img src="imagens/brinquedo_cachorro2.jpg" alt="Brinquedo em forme de Halter na cor verde "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Brinquedo Para Cães Halter</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$7,00</span>
+                    </div>
+                    <div id="98">
+                        <img src="imagens/shampoo.jpg" alt="Shampoo neutro da marca Sanol"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo Neutro </span>
+                        <span class="h5 mt-4 d-block">500 Ml</span>
+                        <span class="h5 mt-4 d-block">R$15,90</span>
+                    </div>
+                    <div id="99">
+                        <img src="imagens/shampoo_dog5.jpg" alt="Shampoo neutro da marca PetBrilho"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo Neutro</span>
+                        <span class="h5 mt-4 d-block">500 Ml</span>
+                        <span class="h5 mt-4 d-block">R$15,90</span>
+                    </div>
+                    <div id="100">
+                        <img src="imagens/shampoo_dog.png" alt="Shampoo antipulgas da marca Mersey Dog"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo Antipulgas</span>
+                        <span class="h5 mt-4 d-block">500 Ml</span>
+                        <span class="h5 mt-4 d-block">R$11,90</span>
+                    </div>
+                    <div id="101">
+                        <img src="imagens/shampoo_dog6.jpg" alt="Shampoo Antipulgas da marca MATACURA"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo Antipulgas</span>
+                        <span class="h5 mt-4 d-block">200 Ml</span>
+                        <span class="h5 mt-4 d-block">R$20,90</span>
+                    </div>
+                    <div id="102">
+                        <img src="imagens/shampoo_dog3.png" alt="Shampoo Antisséptico e Bactericida da marca MATACURA"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo Antisséptico e Bactericida </span>
+                        <span class="h5 mt-4 d-block">200 Ml</span>
+                        <span class="h5 mt-4 d-block">R$20,90</span>
+                    </div>
+                    <div id="103">
+                        <img src="imagens/shampoo_dog7.jpg" alt="Shampoo antiparasitário da marca Dug's"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo Antiparasitário </span>
+                        <span class="h5 mt-4 d-block">500 Ml</span>
+                        <span class="h5 mt-4 d-block">R$13,90</span>
+                    </div>
+                    <div id="104">
+                        <img src="imagens/shampoo_dog4.jpg" alt="Shampoo para Filhotes da marca PetBrilho"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo Filhotes</span>
+                        <span class="h5 mt-4 d-block">500 Ml</span>
+                        <span class="h5 mt-4 d-block">R$15,90</span>
+                    </div>
+                    <div id="105">
+                        <img src="imagens/shampoo_dog.2.jpg"  alt="Shampoo para Filhotes da marca Sanol" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo Filhotes</span>
+                        <span class="h5 mt-4 d-block">500 Ml</span>
+                        <span class="h5 mt-4 d-block">R$15,90</span>
+                    </div>
+                    <div id="106">
+                        <img src="imagens/coleira1.png" alt="Peitoral e Guia para Cachorro na cor azul com estampa de patinhas e ossinhos"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Peitoral e Guia </span>
+                        <span class="h5 mt-4 d-block">N°0</span>
+                        <span class="h5 mt-4 d-block">R$24,50</span>
+                    </div>
+                    <div id="107">
+                        <img src="imagens/coleira12.jpg" alt="Peitoral e Guia para Cachorro na cor rosa "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Peitoral e Guia </span>
+                        <span class="h5 mt-4 d-block">N°1</span>
+                        <span class="h5 mt-4 d-block">R$25,50</span>
+                    </div>
+                    <div id="108">
+                        <img src="imagens/coleira13.jpg" alt="Peitoral e Guia para Cachorro na cor preta com estampa de patinhas e ossinhos"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Peitoral e Guia </span>
+                        <span class="h5 mt-4 d-block">N°2</span>
+                        <span class="h5 mt-4 d-block">R$26,50</span>
+                    </div>
+                    <div id="109">
+                        <img src="imagens/coleira14.jpg" alt="Peitoral e Guia para Cachorro na cor vermelha com estampa de patinhas e ossinhos"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Peitoral e Guia </span>
+                        <span class="h5 mt-4 d-block">N°3</span>
+                        <span class="h5 mt-4 d-block">R$27,50</span>
+                    </div>
+                    <div id="110">
+                        <img src="imagens/coleira2.png" alt="Coleira com guia na cor vermelha com estampa de flores e folhagens brancas "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Coleira e Guia </span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$18,00</span>
+                    </div>
+                    <div id="111">
+                        <img src="imagens/coleira3.jpg" alt="Coleira na cor vermelha "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Coleira Vermelha </span>
+                        <span class="h5 mt-4 d-block">N°1</span>
+                        <span class="h5 mt-4 d-block">R$14,50</span>
+                    </div>
+                    <div id="112">
+                        <img src="imagens/coleira4.png" alt="Coleira na cor azul"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Coleira Azul</span>
+                        <span class="h5 mt-4 d-block">N°2</span>
+                        <span class="h5 mt-4 d-block">R$15,50</span>
+                    </div>
+                    <div id="113">
+                        <img src="imagens/coleira5.png" alt="Coleira na cor rosa"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Coleira Rosa </span>
+                        <span class="h5 mt-4 d-block">N°3</span>
+                        <span class="h5 mt-4 d-block">R$16,50</span>
+                    </div>
+                    <div id="114">
+                        <img src="imagens/coleira6.png" alt="Coleira na cor azul com estampa de patinhas e ossinhos"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Coleira Azul </span>
+                        <span class="h5 mt-4 d-block">N°4</span>
+                        <span class="h5 mt-4 d-block">R$17,50</span>
+                    </div>
+                    <div id="115">
+                        <img src="imagens/coleira7.jpg" alt="Guia na cor vermalha e azul"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Guia Vermelha e Azul</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$16,90</span>
+                    </div>
+                    <div id="116">
+                        <img src="imagens/coleira8.jpg" alt="Guia na cor vermelha e branca"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Guia Vermelha e Branca</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$16,90</span>
+                    </div>
+                    <div id="117">
+                        <img src="imagens/coleira9.jpg" alt="Guia na cor lilás "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Guia Lilás</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$16,90</span>
+                    </div>
+                    <div id="118">
+                        <img src="imagens/coleira10.jpg" alt="Guia na cor verde"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Guia Verde</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$16,90</span>
+                    </div>
+                    <div id="119">
+                        <img src="imagens/coleira11.jpg" alt="Guia na cor azul com estampa de patinhas brancas"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Guia Azul</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$16,90</span>
+                    </div>
+                    <div id="120">
+                        <img src="imagens/caminha.png" alt="Cama na cor cinza"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Cama Cinza</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$107,90</span>
+                    </div>
+                    <div id="121">
+                        <img src="imagens/caminha2.jpg" alt="Cama na cor azul com estampas de borboletas"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Cama Azul com estampa de Borboletas</span>
+                        <span class="h5 mt-4 d-block">Tam. G</span>
+                        <span class="h5 mt-4 d-block">R$80,90</span>
+                    </div>
+                    <div id="122">
+                        <img src="imagens/caminha3.jpg" alt="Cama na cor azul com estampa de patinhas brancas "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Cama Azul</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$70,90</span>
+                    </div>
+                    <div id="123">
+                        <img src="imagens/caminha4.jpg" alt="Cama na cor preta com estampa de patinhas brancas "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Cama Preta</span>
+                        <span class="h5 mt-4 d-block">Tam. G</span>
+                        <span class="h5 mt-4 d-block">R$80,90</span>
+                    </div>
+                    <div id="124">
+                        <img src="imagens/caminha5.png" alt="Cama na cor vermelha"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Cama Vermelha</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$70,90</span>
+                    </div>
+                    <div id="125">
+                        <img src="imagens/casinha1.png" alt="Casa Plástica vermelha e preta"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Casa Plástica</span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$75,65</span>
+                    </div>
+                    <div id="126">
+                        <img src="imagens/casinha2.jpg" alt="Casa Plástica vermelha e cinza"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Casa Plástica</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$85,65</span>
+                    </div>
+                    <div id="127">
+                        <img src="imagens/casinha4.jpg" alt="Casa Plástica azul e preta"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Casa Plástica</span>
+                        <span class="h5 mt-4 d-block">Tam. G</span>
+                        <span class="h5 mt-4 d-block">R$95,65</span>
+                    </div>
+                    <div id="128">
+                        <img src="imagens/caixa_transporte1.png" alt="Caixa de Transporte na cor azul e preta "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Azul </span>
+                        <span class="h5 mt-4 d-block">N°1</span>
+                        <span class="h5 mt-4 d-block">R$54,00</span>
+                    </div>
+                    <div id="129">
+                        <img src="imagens/caixa_transporte4.jpg" alt="Caixa de Transporte na cor roxa e cinza"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Roxa </span>
+                        <span class="h5 mt-4 d-block">N°3</span>
+                        <span class="h5 mt-4 d-block">R$111,50</span>
+                    </div>
+                    <div id="130">
+                        <img src="imagens/caixa_transporte5.jpg" alt="Caixa Transporte na cor cinza e rosa "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Rosa</span>
+                        <span class="h5 mt-4 d-block">N°4</span>
+                        <span class="h5 mt-4 d-block">R$154,00</span>
+                    </div>
+                    <div id="131">
+                        <img src="imagens/caixa_transporte8.jpg" alt="Caixa Transporte na cor cinza e vermelha "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Vermelha </span>
+                        <span class="h5 mt-4 d-block">N°1</span>
+                        <span class="h5 mt-4 d-block">R$54,00</span>
+                    </div>
+                    <div id="132">
+                        <img src="imagens/caixa_transporte2.png" alt="Caixa Transporte na cor branca e azul "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Azul </span>
+                        <span class="h5 mt-4 d-block">N°1</span>
+                        <span class="h5 mt-4 d-block">R$44,90</span>
+                    </div>
+                    <div id="133">
+                        <img src="imagens/caixa_transporte6.jpg" alt="Caixa Transporte na cor branca e azul "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Azul </span>
+                        <span class="h5 mt-4 d-block">N°4</span>
+                        <span class="h5 mt-4 d-block">R$189,90</span>
+                    </div>
+                    <div id="134">
+                        <img src="imagens/caixa_transporte3.jpg" alt="Caixa Transporte na cor rosa e preta"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Rosa</span>
+                        <span class="h5 mt-4 d-block">N°5</span>
+                        <span class="h5 mt-4 d-block">R$500,90</span>
+                    </div>
+                    <div id="135">
+                        <img src="imagens/caixa_transporte7.jpg" alt="Caixa Transporte na cor vermelha e preta "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Vermelha</span>
+                        <span class="h5 mt-4 d-block">N°1</span>
+                        <span class="h5 mt-4 d-block">R$44,90</span>
+                    </div>
+                    <div id="136">
+                        <img src="imagens/roupa1.png" alt="Vestido cinza com gola rosa e um laço preto"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Vestido Cinza</span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$74,90</span>
+                    </div>
+                    <div id="137">
+                        <img src="imagens/roupa2.jpg" alt="Vestido rosa com estampa de patinhas e ossinhos na cor branca "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Vestido Rosa</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$70,90</span>
+                    </div>
+                    <div id="138">
+                        <img src="imagens/roupa3.jpg" alt="Vestido Vermlho com estampa de patinhas e ossinhos"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Vestido Vermelho</span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$69,90</span>
+                    </div>
+                    <div id="139">
+                        <img src="imagens/roupa4.jpg" alt="Capa xadrez para pet "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Capa Xadrez</span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$59,90</span>
+                    </div>
+                    <div id="140">
+                        <img src="imagens/roupa5.jpg" alt="Capa azul com estampa de luas com ursinhos"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Capa Azul</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$70,90</span>
+                    </div>
+                    <div id="141">
+                        <img src="imagens/roupa_cachorro.png" alt="Capa cinza com frase The Dog Club "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Capa Cinza</span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$70,90</span>
+                    </div>
+                    <div id="142">
+                        <img src="imagens/colar.png" alt="Colar Elizabetano "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Colar Elizabetano</span>
+                        <span class="h5 mt-4 d-block">N°10</span>
+                        <span class="h5 mt-4 d-block">R$27,90</span>
+                    </div>
+                    
+
+                </article>
+
+
+
+            </section>
+        </main>
+
+        <footer class="footer">
+
+            <!-- parte referente ao rodape -->
+
+            <div id="menu2">
+                <h4>Endereço</h4>
+                <address>
+                    Rua Carlos Amatuci<br>
+                    Jardim Icarai, São Paulo - SP <br>
+                    Cep 04844-090
+                </address>
+            </div>
+            <div>
+                <h4>Telefone</h4>
+                <P>
+                    (11) 95109-5395
+                </P>
+                <a href="https://wa.me/5511951095395?text=Olá,%20em%20que%20podemos%20te%20ajudar" target="_blank">
+                <img src="imagens/whats.ico" alt="ícone whatsapp" id="whast1" name="img_apoio">
+                 </a>
+            </div>
+            <div>
+                <h4>Horário de Funcionamento</h4>
+                <p>Segunda - Sexta 10:00 ás 18:00</p>
+                <p>Sabádo - 10:00 ás 15:00</p>
+            </div>
+
+            <div id="iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14608.282382409277!2d-46.72243820247826!3d-23.744861838271888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4f226863f473%3A0xd4a35d9c2c9ecc92!2zQ2FzYSBEZSBSYcOnw6NvIE1hbmFjw6E!5e0!3m2!1spt-BR!2sbr!4v1586545686702!5m2!1spt-BR!2sbr"
+                    allowfullscreen="false" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </footer>
+    </body>
+
+</html>

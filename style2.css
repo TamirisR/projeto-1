@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap');
+body{
+    margin: 0cm;
+    width: 100%;
+    min-height: 100vh;
+    /*background-image: linear-gradient(to right top, #acaae0, #aab3e5, #a9bbea, #a9c3ed, #abcbf0, #a6d2f5, #a1d8f9, #9cdffc, #8ae6ff, #77eeff, #67f5fa, #5ffbf1);8*/
+    display: flex; 
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+section{
+    text-align: center;
+}
+
+/* cabeçalho do site */
+header{
+    width: 100%;
+    height: auto;
+    background-color: #3766BD;
+    display: flex;
+    justify-content: center;
+    
+}
+header div img{
+    display: block;
+    margin: auto;
+    padding-top: 1%;
+}
+#menu{
+   background-color:#3766BD;
+}
+#menu a{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2em;
+    color: #FF9E17;
+}
+#menu a img{
+    width: 2em; 
+}
+
+
+/* rodapé do site  */
+footer{
+    width: 100%;
+    height: auto;
+    background-color:#4077DE; 
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    padding-right:3% ;
+    padding-left:3%; 
+    }
+footer div{ 
+    margin:1em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+footer div p,address{
+  font-size: 0.8em;
+}
+
+iframe{
+    width: 15em;
+    height: 9em;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.1em;
+    border-radius: 1em;
+}
+
+#whast1 {
+    width: 2.5em;  
+}
+
+
+/*corpo do site */
+h4,h2, h1{
+    text-align: center;
+    margin-top: 0.2em;
+    font-weight: 800;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h4{
+    font-size: 1em;
+}
+h1{
+    display: none;
+}
+/* carrosel de imagens */
+.carousel-inner div {
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+.carousel-inner img {
+    max-width: 100%; 
+    max-height: 100%;  
+    border-radius : 0.2em;
+   
+}
+.carousel-indicators li{
+    background-color: rgb(10, 10, 248);
+    width: 2em;
+    height: 0.3em;   
+}
+
+/*destaque*/
+
+.MultiCarousel { float: left; overflow: hidden; padding: 0.4em; width: 100%; position:relative; }
+.MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+.MultiCarousel .MultiCarousel-inner .item { float: left;}
+.MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:1em; margin:0.5em; background:#ffffff;border-radius: 0.5em; height: 10em;}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+.MultiCarousel .leftLst { left:0; }
+.MultiCarousel .rightLst { right:0; } 
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+.MultiCarousel-inner img{
+    width: 7em;
+}
+
+
+/*pagina produtos*/
+
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0.4em; 
+    font-size: 25px;
+}
+.underline{
+    margin-bottom: 0.8em;
+    height: 3px;
+    background-color: #FF9E17;
+}
+#produtos nav {
+    float: left;
+    width: 21%;
+    padding: 2em;
+    flex-direction: column;
+    display: flex;
+    text-align: left;
+}
+  
+#produtos article {
+    float: left;
+    padding: 2em;
+    width: 67%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#produtos article div{
+      margin: 1em;
+      width: 10em;
+      
+/* para 4 produtos por fileira substituir o 10 por 12 */
+}
+#produtos article div img{
+      width: 10em;
+      border-radius: 0.5em;
+}
+#produtos article div span{
+    font-size: 1em;
+    
+}
+.mt-4{
+    margin-top: 0rem!important;
+}
+ 
+ 
+#produtos:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  @media (max-width: 600px) {
+    #produtos nav {
+      width: 100%;
+      height: auto;
+    }
+    #produtos article {
+        width: 100%;
+        height: auto;
+      }
+    .carousel-inner div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #logoFooter{
+    display:none;
+    }
+    #iframe{
+        display:none;
+    }
+}
+/* pagina quem somos */
+
+#quemsomos div {
+    display: flex;
+    justify-content: center;
+}
+#quemsomos div p {
+    width: 30em;
+}
+#quemsomos div iframe {
+    width: 70%;
+    height: 25em ;
+    margin-bottom: 1em;
+}
+
+#logoFooter{
+    opacity: 0.7;
+   
+    
+}

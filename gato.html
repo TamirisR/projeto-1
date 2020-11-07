@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/faftcon.png" type="image/x-icon">
+        <script src="jquery.js"></script>
+        <script src="bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style2.css">
+
+        <title>Casa de Rações Manacá</title>
+
+    </head>
+
+    <body Onload="ChangeImg()">
+
+        <header>
+            <div>
+                <a href="index.html">
+                    <img src="imagens/logo6.png" alt="logo casa de rações manacá">
+                </a>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-md  " id="menu">
+            <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <img src="imagens/menu1.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <a class="nav-link" href="gato.html">Gato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cachorro.html">Cachorro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="passarinho.html">Passarinho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quemSomos.html">Quem Somos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+
+            <section id="produtos">
+                <nav>
+                    <h3 id="categorias">Gato</h3>
+                    <div class="underline "></div>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek11" checked onclick="aparecer11()"> Todos
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek" onclick="aparecer()"> Rações
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek1" onclick="aparecer1()"> Petiscos
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek2" onclick="aparecer2()"> Sachês
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek3" onclick="aparecer3()"> Comedouro e Bebedouro
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek4" onclick="aparecer4()"> Brinquedos
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek5" onclick="aparecer5()"> Higiene
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek6" onclick="aparecer6()"> Coleiras
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek7" onclick="aparecer7()"> Camas
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek8" onclick="aparecer8()"> Caixa de transporte
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="chek9" onclick="aparecer9()"> Roupas
+                    </label>
+                    
+                </nav>
+
+                <article>
+                    <div id="1" style="display:none;">
+                        <h3>Trabalhamos com rações a granel das melhores marcas</h3>
+                        <img src="imagens/ração3.png" alt="Conteiner de rações a granel" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Rações para gatos filhotes, adultos e castrados</span>
+                    </div>
+                    <div id="2">
+                        <img src="imagens/golden.jpg" alt="Logo da marca Golden" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Golden</span>
+                        <span class="h5 mt-4 d-block">1 Kilo</span>
+                        <span class="h5 mt-4 d-block">R$13,00</span>
+
+                    </div>
+                    <div id="3">
+                        <img src="imagens/purina.png" alt="Logo da marca Purina" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Purina</span>
+                        <span class="h5 mt-4 d-block">1 Kilo</span>
+                        <span class="h5 mt-4 d-block">R$11,00</span>
+                    </div>
+                    <div id="4">
+                        <img src="imagens/max.jpg" alt="Logo da marca Max" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Max</span>
+                        <span class="h5 mt-4 d-block">1 Kilo</span>
+                        <span class="h5 mt-4 d-block">R$12,50</span>
+                    </div>
+                    <div id="5">
+                        <img src="imagens/whiskas.jpg" alt="Logo da marca Whiskas" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Whiskas</span>
+                        <span class="h5 mt-4 d-block">1 Kilo</span>
+                        <span class="h5 mt-4 d-block">R$12,00</span>
+                    </div>
+                    <div id="6">
+                        <img src="imagens/gran.jpg" alt="Logo da marca GranPlus" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Gran Plus</span>
+                        <span class="h5 mt-4 d-block">1 Kilo</span>
+                        <span class="h5 mt-4 d-block">R$15,00</span>
+                    </div>
+                    <div id="7">
+                        <img src="imagens/petisco_gato2.jpg" alt="Embalagem de petisco whiskas anti bola de pelos" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Petisco Whiskas Anti bola de pelos </span>
+                        <span class="h5 mt-4 d-block">40g</span>
+                        <span class="h5 mt-4 d-block">R$6,99</span>
+                        
+                    </div>
+                    <div id="8">
+                        <img src="imagens/petisco5.png"  alt="Embalagem de petisco whiskas pelo saudavel" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Petisco Whiskas Pelo saudável </span>
+                        <span class="h5 mt-4 d-block">40g</span>
+                        <span class="h5 mt-4 d-block">R$6,99</span>
+                    </div>
+                    <div id="9">
+                        <img src="imagens/petisco_gato1.jpg" alt=" Embalagem de petisco Dreamies sabor carne"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Petisco Dreamies sabor Carne </span>
+                        <span class="h5 mt-4 d-block">40g</span>
+                        <span class="h5 mt-4 d-block">R$4,99</span>
+                    </div>
+                    <div id="10">
+                        <img src="imagens/petisco_gato3.jpg" alt="Embalagem de petisco Dreamies sabor queijo"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Petisco Dreamies sabor Queijo </span>
+                        <span class="h5 mt-4 d-block">40g</span>
+                        <span class="h5 mt-4 d-block">R$4,99</span>
+                    </div>
+                    <div id="11">
+                        <img src="imagens/petisco_gato4.jpg"  alt="Embalagem de petisco Dreamies sabor frango" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Petisco Dreamies sabor Frango </span>
+                        <span class="h5 mt-4 d-block">40g</span>
+                        <span class="h5 mt-4 d-block">R$4,99</span>
+                    </div>
+                    <div id="12">
+                        <img src="imagens/sache_gato.jpeg" alt="Embalagem de ração úmida Whiskas Sachê sabor salmão ao molho para gatos adultos"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Sachê Whiskas sabor Salmão ao molho para gatos adultos </span>
+                        <span class="h5 mt-4 d-block">85g</span>
+                        <span class="h5 mt-4 d-block">R$2,29</span>
+                    </div>
+                    <div id="13">
+                        <img src="imagens/sache_gato3.jpg" alt="Embalagem de ração úmida Whiskas Sachê sabor frango ao molho para gatos adultos "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Sachê Whiskas sabor Frango ao molho para gatos adultos</span>
+                        <span class="h5 mt-4 d-block">85g</span>
+                        <span class="h5 mt-4 d-block">R$2,29</span>
+                    </div>
+                    <div id="14">
+                        <img src="imagens/sache_gato4.jpg" alt="Embalagem de ração úmida Whiskas Sachê sabor carne ao molho para gatos adultos "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Sachê  Whiskas Carne ao molho para gatos adultos</span>
+                        <span class="h5 mt-4 d-block">85g</span>
+                        <span class="h5 mt-4 d-block">R$2,29</span>
+                    </div>
+                    <div id="15">
+                        <img src="imagens/sache_gato2.jpg"  alt="Embalagem de ração úmida Whiskas Sachê sabor carne ao molho para gatos filhotes" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Sachê Whiskas Carne ao molho para gatos filhotes</span>
+                        <span class="h5 mt-4 d-block">85g</span>
+                        <span class="h5 mt-4 d-block">R$2,29</span>
+                    </div>
+                    <div id="16">
+                        <img src="imagens/sache_gato5.jpg" alt="Embalagem de ração úmida Whiskas Sachê sabor frango ao molho para gatos filhotes "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Sachê Whiskas Frango ao molho para gatos filhotes </span>
+                        <span class="h5 mt-4 d-block">85g</span>
+                        <span class="h5 mt-4 d-block">R$2,29</span>
+                    </div>
+                    <div id="17">
+                        <img src="imagens/pote2.jpg" alt="Comedouro duplo de plástico na cor roxa"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro Duplo </span>
+                        <span class="h5 mt-4 d-block">Tam. G</span>
+                        <span class="h5 mt-4 d-block">R$10,00</span>
+                    </div>
+                    <div id="18">
+                        <img src="imagens/pote6.jpg" alt="Comedouro duplo de plástico na cor azul"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro Duplo</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$7,50</span>
+                    </div>
+                    <div id="19">
+                        <img src="imagens/pote7.jpg" alt="Comedouro duplo de plástico na cor vermelha "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro Duplo</span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$5,00</span>
+                    </div>
+                    <div id="20">
+                        <img src="imagens/pote3.jpg"  alt="Comedouro e Bebedouro de plástico na cor na cor azul" class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro e Bebedouro</span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$5,00</span>
+                    </div>
+                    <div id="21">
+                        <img src="imagens/pote4.jpg" alt="Comedouro e Bebedouro de plástico na cor vermelha"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro e Bebedouro</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$7,50</span>
+                    </div>
+                    <div id="22">
+                        <img src="imagens/pote5.jpg" alt="Comedouro e Bebedouro de plástico na cor rosa"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro e Bebedouro</span>
+                        <span class="h5 mt-4 d-block">Tam. G</span>
+                        <span class="h5 mt-4 d-block">R$10,00</span>
+                    </div>
+                    <div id="23">
+                        <img src="imagens/pote8.jpg" alt="Comedouro e Bebedouro de alumínio"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Comedouro e Bebedouro</span>
+                        <span class="h5 mt-4 d-block">Tam. G</span>
+                        <span class="h5 mt-4 d-block">R$19,00</span>
+                    </div>
+                    <div id="24">
+                        <img src="imagens/brinquedo_gato1.jpg" alt="Brinquedo ratinho para gatos de plástico na cor preta "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Brinquedo Ratinho para Gatos</span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$5,00</span>
+                    </div>
+                    <div id="25">
+                        <img src="imagens/brinquedo_gato2.png" alt="Brinquedo ratinho para gatos de plástico na cor vermelha"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Brinquedo Ratinho para Gatos</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$9,90</span>
+                    </div>
+                    <div id="26">
+                        <img src="imagens/brinquedo_gato3.jpg" alt="Brinquedo ratinho para gatos de plástico na cor cinza"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Brinquedo Ratinho para Gatos</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$9,90</span>
+                        
+                    </div>
+                    <div id="27">
+                        <img src="imagens/brinquedo_gato4.jpg" alt="Bolinhatranslúcida com guizo "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Bolinha com guizo</span>
+                        <span class="h5 mt-4 d-block">Tam. G</span>
+                        <span class="h5 mt-4 d-block">R$14,90</span>
+                        
+                    </div>
+                    <div id="28">
+                        <img src="imagens/brinquedo_gato5.jpg" alt="Bolinha vazada com guizo"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Bolinha com guizo </span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$14,90</span>
+                    </div> 
+                    <div id="29">
+                        <img src="imagens/areia_gato.png" alt="Areia Higiênica Pipicat"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Areia Higiênica Pipicat</span>
+                        <span class="h5 mt-4 d-block">A partir de</span>
+                        <span class="h5 mt-4 d-block">R$10,90</span>
+                    </div>
+                    <div id="30">
+                        <img src="imagens/areia_gato4.jpg" alt="Areia Higiênica BobCat"  class="img-fluid">
+                        <span class="h5 mt-4 d-block"> Areia Higiênica BobCat</span>
+                        <span class="h5 mt-4 d-block">A partir de</span>
+                        <span class="h5 mt-4 d-block">R$7,90</span>
+                    </div>
+                    <div id="31">
+                        <img src="imagens/areia_gato3.jpg" alt="Areia Higiênica Kets"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Areia Higiênica Kets</span>
+                        <span class="h5 mt-4 d-block">A partir de</span>
+                        <span class="h5 mt-4 d-block">R$9,90</span>
+                    </div>
+                    <div id="32">
+                        <img src="imagens/areia_gato2.png" alt="Granulado Higiênico Sílica"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Granulado Higiênico Sílica</span>
+                        <span class="h5 mt-4 d-block">1,5 Kilos</span>
+                        <span class="h5 mt-4 d-block">R$29,90</span>
+                    </div>
+                    <div id="33">
+                        <img src="imagens/areia_gato5.jpg" alt="Granulado Higiênico de Madeira"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Granulado Higiênico de Madeira</span>
+                        <span class="h5 mt-4 d-block">A partir de</span>
+                        <span class="h5 mt-4 d-block">R$9,90</span>
+                    </div>
+                    <div id="34">
+                        <img src="imagens/pa.jpg" alt="Pá Higiênica na cor azul "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Pá Higiênica Azul</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$5,90</span>
+                    </div>
+                    <div id="35">
+                        <img src="imagens/pa2.jpg" alt="Pá Higiênica na cor vermelha"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Pá Higiênica Vermelha </span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$5,90</span>
+                    </div>
+                    <div id="36">
+                        <img src="imagens/pa3.jpg" alt="Pá Higiênica na cor verde "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Pá Higiênica Verde</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$5,90</span>
+                    </div>
+                    <div id="37">
+                        <img src="imagens/pa4.jpg" alt="Pá Higiênica na cor cinza "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Pá Higiênica Cinza</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$5,90</span>
+                    </div>
+                    <div id="38">
+                        <img src="imagens/pa5.jpeg" alt="Pá Higiênica na cor azul escura "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Pá Higiênica Azul </span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$5,90</span>
+                    </div>
+                    <div id="39">
+                        <img src="imagens/shampoo.jpg" alt="Shampoo neutro da marca Sanol"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo Neutro  </span>
+                        <span class="h5 mt-4 d-block">500 Ml</span>
+                        <span class="h5 mt-4 d-block">R$15,90</span>
+                    </div>
+                    <div id="40">
+                        <img src="imagens/shampoo_dog.png" alt="Shampoo antipulgas da marca Mersey Dog"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo Antipulgas</span>
+                        <span class="h5 mt-4 d-block">500 Ml</span>
+                        <span class="h5 mt-4 d-block">R$11,90</span>
+                    </div>
+                    <div id="41">
+                        <img src="imagens/shampoo_dog5.jpg" alt="Shampoo neutro da marca PetBrilho"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo Neutro</span>
+                        <span class="h5 mt-4 d-block">500 Ml</span>
+                        <span class="h5 mt-4 d-block">R$12,90</span>
+                    </div>
+                    <div id="42">
+                        <img src="imagens/shampoo_gato.png" alt="Shampoo antipulgas para Gatos da marca MATACURA"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo Antipulgas </span>
+                        <span class="h5 mt-4 d-block">200 Ml</span>
+                        <span class="h5 mt-4 d-block">R$20,90</span>
+                    </div>
+                    <div id="43">
+                        <img src="imagens/shampoo_gato2.jpg" alt="Shampoo para Gatos da marca Sanol"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo para Gatos</span><span class="h5 mt-4 d-block">500 Ml</span>
+                        <span class="h5 mt-4 d-block">R$15,90</span>
+                    </div>
+                    <div id="44">
+                        <img src="imagens/shampoo_gato3.jpg" alt="Shampoo para Gatos da marca Sanol"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo para Gatos</span>
+                        <span class="h5 mt-4 d-block">500 Ml</span>
+                        <span class="h5 mt-4 d-block">R$15,90</span>
+                    </div>
+                    <div id="45">
+                        <img src="imagens/shampoo_dog4.jpg" alt="Shampoo para Filhotes da marca PetBrilho"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Shampoo Filhotes</span>
+                        <span class="h5 mt-4 d-block">500 Ml</span>
+                        <span class="h5 mt-4 d-block">R$12,90</span>
+                    </div>
+                    <div id="46">
+                        <img src="imagens/coleira_gato.png" alt="Coleira para Gatos Ajustável com guizo na cor vermelha com estampada de flores"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Coleira Ajustável</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$5,90</span>
+                    </div>
+                    <div id="47">
+                        <img src="imagens/coleira_gato2.png" alt="Coleira para Gatos Ajustável com guizo na cor lilas com estampa de gatos, estrelas e símbolos musicais"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Coleira Ajustável</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$5,90</span>
+                    </div>
+                    <div id="48">
+                        <img src="imagens/coleira_gato3.png" alt="Coleira para Gatos Ajustável com guizo na cor preta com estampa de gatinho laranja e bolinhos"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Coleira Ajustável</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$5,90</span>
+                    </div>
+                    <div id="49">
+                        <img src="imagens/coleira_gato4.png" alt="Coleira para Gatos Ajustável com guizo na cor azul com estampa de gatinhos cinza e flores rosa"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Coleira Ajustável</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$5,90</span>
+                    </div>
+                    <div id="50">
+                        <img src="imagens/coleira_gato5.jpg" alt="Coleira para Gatos Ajustável com guizo com cores coloridas e estampa de gatos"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Coleira Ajustável</span>
+                        <span class="h5 mt-4 d-block">Tam. Único</span>
+                        <span class="h5 mt-4 d-block">R$5,90</span>
+                    </div>
+                    <div id="51">
+                        <img src="imagens/caminha.png" alt="Cama na cor cinza"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Cama Cinza </span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$107,90</span>
+                    </div>
+                    <div id="52">
+                        <img src="imagens/caminha2.jpg" alt="Cama na cor azul com estampas de borboletas"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Cama com estampa de Borboletas </span>
+                        <span class="h5 mt-4 d-block">Tam. G</span>
+                        <span class="h5 mt-4 d-block">R$80,90</span>
+                    </div>
+                    <div id="53">
+                        <img src="imagens/caminha3.jpg" alt="Cama na cor azul com estampa de patinhas "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Cama Azul </span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$70,90</span>
+                    </div>
+                    <div id="54">
+                        <img src="imagens/caminha4.jpg" alt="Cama na cor preta com estampa de patinhas brancas"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Cama Preta</span>
+                        <span class="h5 mt-4 d-block">Tam. G</span>
+                        <span class="h5 mt-4 d-block">R$80,90</span>
+                    </div>
+                    <div id="55">
+                        <img src="imagens/caminha5.png" alt="Cama na cor vermelha"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Cama Vermelha</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$70,90</span>
+                    </div>
+                    <div id="56">
+                        <img src="imagens/caixa_transporte1.png" alt="Caixa Transporte na cor azul e preta"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Azul</span>
+                        <span class="h5 mt-4 d-block">N°1</span>
+                        <span class="h5 mt-4 d-block">R$54,00</span>
+                    </div>
+                    <div id="57">
+                        <img src="imagens/caixa_transporte4.jpg" alt="Caixa Transporte na cor roxa e cinza"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Roxa</span>
+                        <span class="h5 mt-4 d-block">N°3</span>
+                        <span class="h5 mt-4 d-block">R$111,50</span>
+                    </div>
+                    <div id="58">
+                        <img src="imagens/caixa_transporte5.jpg" alt="Caixa Transporte na cor cinza e rosa"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Rosa</span>
+                        <span class="h5 mt-4 d-block">N°4</span>
+                        <span class="h5 mt-4 d-block">R$154,00</span>
+                    </div>
+                    <div id="59">
+                        <img src="imagens/caixa_transporte8.jpg" alt="Caixa Transporte na cor cinza e vermelha"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Vermelha</span>
+                        <span class="h5 mt-4 d-block">N°1</span>
+                        <span class="h5 mt-4 d-block">R$54,00</span>
+                    </div>
+                    <div id="60">
+                        <img src="imagens/caixa_transporte2.png" alt="Caixa Transporte na cor branca e azul"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Azul</span>
+                        <span class="h5 mt-4 d-block">N°1</span>
+                        <span class="h5 mt-4 d-block">R$44,90</span>
+                    </div>
+                    <div id="61">
+                        <img src="imagens/caixa_transporte6.jpg" alt="Caixa Transporte na cor branca e azul "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Azul</span>
+                        <span class="h5 mt-4 d-block">N°4</span>
+                        <span class="h5 mt-4 d-block">R$189,90</span>
+                    </div>
+                    <div id="62">
+                        <img src="imagens/caixa_transporte3.jpg" alt="Caixa Transporte na cor rosa e preta"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Rosa</span>
+                        <span class="h5 mt-4 d-block">N°5</span>
+                        <span class="h5 mt-4 d-block">R$500,90</span>
+                    </div>
+                    <div id="63">
+                        <img src="imagens/caixa_transporte7.jpg" alt="Caixa Transporte na cor vermelha e preta"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Caixa de Transporte Vermelha</span>
+                        <span class="h5 mt-4 d-block">N°1</span>
+                        <span class="h5 mt-4 d-block">R$44,90</span>
+                    </div>
+                    <div id="64">
+                        <img src="imagens/roupa1.png" alt="Vestido cinza com gola rosa e um laço preto"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Vestido Cinza</span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$74,90</span>
+                    
+                    </div>
+                    <div id="65">
+                        <img src="imagens/roupa2.jpg" alt="Vestido rosa com estampa de patinhas e ossinhos na cor branca "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Vestido Rosa</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$70,90</span>
+                    </div>
+                    <div id="66">
+                        <img src="imagens/roupa3.jpg" alt="Vestido Vermlho com estampa de patinhas e ossinhos"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Vestido Vermelho</span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$69,90</span>
+                    </div>
+                    <div id="67">
+                        <img src="imagens/roupa4.jpg" alt="Capa xadrez para pet "  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Capa Xadrez</span>
+                        <span class="h5 mt-4 d-block">Tam. P</span>
+                        <span class="h5 mt-4 d-block">R$59,90</span>
+                    </div>
+                    <div id="68">
+                        <img src="imagens/roupa5.jpg" alt="Capa azul com estampa de luas com ursinhos"  class="img-fluid">
+                        <span class="h5 mt-4 d-block">Capa Azul</span>
+                        <span class="h5 mt-4 d-block">Tam. M</span>
+                        <span class="h5 mt-4 d-block">R$70,90</span>
+                    </div>
+
+                </article>
+
+
+
+            </section>
+        </main>
+
+        <footer class="footer">
+
+            <!-- parte referente ao rodape -->
+
+            <div id="menu2">
+                <h4>Endereço</h4>
+                <address>
+                    Rua Carlos Amatuci<br>
+                    Jardim Icarai, São Paulo - SP <br>
+                    Cep 04844-090
+                </address>
+            </div>
+            <div>
+                <h4>Telefone</h4>
+                <P>
+                    (11) 95109-5395
+                </P>
+                <a href="https://wa.me/5511951095395?text=Olá,%20em%20que%20podemos%20te%20ajudar" target="_blank">
+                <img src="imagens/whats.ico" alt="ícone whatsapp" id="whast1" name="img_apoio">
+                 </a>
+            </div>
+            <div>
+                <h4>Horário de Funcionamento</h4>
+                <p>Segunda - Sexta 10:00 ás 18:00</p>
+                <p>Sabádo - 10:00 ás 15:00</p>
+            </div>
+
+            <div id="iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14608.282382409277!2d-46.72243820247826!3d-23.744861838271888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4f226863f473%3A0xd4a35d9c2c9ecc92!2zQ2FzYSBEZSBSYcOnw6NvIE1hbmFjw6E!5e0!3m2!1spt-BR!2sbr!4v1586545686702!5m2!1spt-BR!2sbr"
+                    allowfullscreen="false" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </footer>
+    </body>
+
+</html>
